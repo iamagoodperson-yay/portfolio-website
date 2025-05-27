@@ -1,95 +1,81 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+import Card from "./components/card/card";
+import Image from "next/image";
+
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    return (
+        <div className={styles.page}>
+            <div className={styles.header}>
+                <div className={styles.left}>
+                    <h1 className={styles.title}>Student | Developer | Kenzie</h1>
+                    <p className={styles.description}>
+                        Hi, I'm Kenzie! I'm passionate about technology and love building creative projects. Here are some of the things I've worked on, click the cards to explore them and see what I've been up to!
+                    </p>
+                </div>
+                <div className={styles.right}>
+                    <Image
+                        className={styles["header-img"]}
+                        src="/kenzie.jpeg"
+                        width={1600}
+                        height={1201}
+                        alt="Header image"
+                    />
+                </div>
+            </div>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+            <h1 className={styles["section-header"]}>Featured</h1>
+            <div className={styles["card-container"]}>
+                <Card
+                    title="CodeVerse"
+                    href="https://codeverse-nu.vercel.app/codeverse-vanilla/"
+                    imageSrc="/codeverse.png"
+                    imageWidth={2880}
+                    imageHeight={1800}
+                    imageAlt="CodeVerse logo"
+                    bodyText="CodeVerse is a web app my team and I developed to teach programming through interactive video lessons, in collaboration with Blangah Rise Primary School. Designing and building this app taught me about user authentication, database management, the importance of teamwork, and effective communication."
+                />
+                <Card
+                    title="SST CTF"
+                    href="https://sstctf.ybn.sg"
+                    imageSrc="/sstctf_logo.png"
+                    imageWidth={463}
+                    imageHeight={479}
+                    imageAlt="SST CTF logo"
+                    bodyText="As organiser of SST CTF 2025, a school-wide cybersecurity capture-the-flag style competition focused on cryptography, web security, and digital forensics, I planned challenges, coordinated participants, and ensured smooth execution—strengthening leadership and technical skills while contributing to our tech community."
+                />
+                <Card
+                    title="CodeVerse"
+                    href="https://codeverse-nu.vercel.app/codeverse-vanilla/"
+                    imageSrc="/codeverse.png"
+                    imageWidth={2880}
+                    imageHeight={1800}
+                    imageAlt="CodeVerse logo"
+                    bodyText="CodeVerse is a web app my team and I developed to teach programming through interactive video lessons, in collaboration with Blangah Rise Primary School. Building this app taught me about user authentication, database management, and the importance of teamwork and effective communication."
+                />
+            </div>
+
+            <h1 className={styles["section-header"]}>Projects</h1>
+            <div className={styles["card-container"]}>
+                <Card
+                    title="CodeVerse"
+                    href="https://codeverse-nu.vercel.app/codeverse-vanilla/"
+                    imageSrc="/codeverse.png"
+                    imageWidth={2880}
+                    imageHeight={1800}
+                    imageAlt="Codeverse logo"
+                    bodyText="This is a web app my team and I created, with video lessons which teaches programming in collaboration with Blangah Rise Primary School. Through designing and making the app, I gained valuable insights like how to handle user verification, and dealing with databases. I also learnt soft skills like team management and presentation, crucial skills in today's workforce."
+                />
+                <Card
+                    title="CodeVerse"
+                    href="https://codeverse-nu.vercel.app/codeverse-vanilla/"
+                    imageSrc="/codeverse.png"
+                    imageWidth={2880}
+                    imageHeight={1800}
+                    imageAlt="Codeverse logo"
+                    bodyText="This is a web app my team and I created, with video lessons which teaches programming in collaboration with Blangah Rise Primary School. Through designing and making the app, I gained valuable insights like how to handle user verification, and dealing with databases. I also learnt soft skills like team management and presentation, crucial skills in today's workforce."
+                />
+            </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }
