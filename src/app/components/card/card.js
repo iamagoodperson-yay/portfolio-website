@@ -13,6 +13,7 @@ const Card = ({ title, href, imageSrc, imageWidth, imageHeight, imageAlt, bodyTe
             className={`${styles.card} ${flipped ? styles.flipped : ""}`}
             onClick={handleFlip}
             onKeyDown={e => (e.key === "Enter" || e.key === " ") && handleFlip()}
+            tabIndex={0}
         >
             <div className={styles["card-inner"]}>
                 <div className={styles.front}>
@@ -30,12 +31,13 @@ const Card = ({ title, href, imageSrc, imageWidth, imageHeight, imageAlt, bodyTe
                 <div className={styles.back}>
                     <h1>{title}</h1>
                     <p>{bodyText}</p>
-                    <Link
-                        className={styles.link}
-                        href={href}
-                        target="_blank"
-                        onClick={e => e.stopPropagation()} 
-                    >View Project</Link>
+                    {href !== "" && (
+                        <Link
+                            className={styles.link}
+                            href={href}
+                            target="_blank" 
+                        >View Project</Link>
+                    )}
                 </div>
             </div>
         </div>

@@ -38,24 +38,24 @@ export default function Home() {
                 <Card
                     title="SST CTF"
                     href="https://sstctf.ybn.sg"
-                    imageSrc="/sstctf_logo.png"
+                    imageSrc="/sstctf.png"
                     imageWidth={463}
                     imageHeight={479}
                     imageAlt="SST CTF logo"
-                    bodyText="As organiser of SST CTF 2025, a school-wide cybersecurity capture-the-flag style competition focused on cryptography, web security, and digital forensics, I planned challenges, coordinated participants, and ensured smooth execution—strengthening leadership and technical skills while contributing to our tech community."
+                    bodyText="As organiser of SST CTF 2025, a school-wide cybersecurity capture-the-flag style competition focused on cryptography, web security, and digital forensics, I planned challenges, coordinated participants, and ensured smooth execution. This strengthened my leadership and technical skills while contributing to our tech community."
                 />
                 <Card
-                    title="CodeVerse"
-                    href="https://codeverse-nu.vercel.app/codeverse-vanilla/"
-                    imageSrc="/codeverse.png"
-                    imageWidth={2880}
-                    imageHeight={1800}
-                    imageAlt="CodeVerse logo"
+                    title="VEX Worlds"
+                    href=""
+                    imageSrc="/vex_worlds.png"
+                    imageWidth={900}
+                    imageHeight={900}
+                    imageAlt="VEX Robotics World Championship logo"
                     bodyText="CodeVerse is a web app my team and I developed to teach programming through interactive video lessons, in collaboration with Blangah Rise Primary School. Building this app taught me about user authentication, database management, and the importance of teamwork and effective communication."
                 />
             </div>
 
-            <h1 className={styles["section-header"]}>Projects</h1>
+            <h1 className={styles["section-header"]}>Competitions</h1>
             <div className={styles["card-container"]}>
                 <Card
                     title="CodeVerse"
