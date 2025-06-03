@@ -51,30 +51,13 @@ export default function Home() {
                     imageWidth={900}
                     imageHeight={900}
                     imageAlt="VEX Robotics World Championship logo"
-                    bodyText="CodeVerse is a web app my team and I developed to teach programming through interactive video lessons, in collaboration with Blangah Rise Primary School. Building this app taught me about user authentication, database management, and the importance of teamwork and effective communication."
+                    bodyText="At the 2025 VEX Robotics World Championship in Dallas, I worked with my team to design, build, and program a robot for complex engineering challenges. Competing against top teams worldwide, I refined my technical and coding skills, adapted to new obstacles, and learned the value of teamwork and innovation in a high-pressure, international setting."
                 />
             </div>
 
             <h1 className={styles["section-header"]}>Competitions</h1>
             <div className={styles["card-container"]}>
-                <Card
-                    title="CodeVerse"
-                    href="https://codeverse-nu.vercel.app/codeverse-vanilla/"
-                    imageSrc="/codeverse.png"
-                    imageWidth={2880}
-                    imageHeight={1800}
-                    imageAlt="Codeverse logo"
-                    bodyText="This is a web app my team and I created, with video lessons which teaches programming in collaboration with Blangah Rise Primary School. Through designing and making the app, I gained valuable insights like how to handle user verification, and dealing with databases. I also learnt soft skills like team management and presentation, crucial skills in today's workforce."
-                />
-                <Card
-                    title="CodeVerse"
-                    href="https://codeverse-nu.vercel.app/codeverse-vanilla/"
-                    imageSrc="/codeverse.png"
-                    imageWidth={2880}
-                    imageHeight={1800}
-                    imageAlt="Codeverse logo"
-                    bodyText="This is a web app my team and I created, with video lessons which teaches programming in collaboration with Blangah Rise Primary School. Through designing and making the app, I gained valuable insights like how to handle user verification, and dealing with databases. I also learnt soft skills like team management and presentation, crucial skills in today's workforce."
-                />
+                <h1>Coming soon...</h1>
             </div>
         </div>
     );
