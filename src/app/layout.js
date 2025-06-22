@@ -1,8 +1,13 @@
-import { Roboto } from "next/font/google";
+import { Roboto, Montserrat } from "next/font/google";
 import "./globals.css";
 
 const roboto = Roboto({
     variable: "--font-roboto",
+    subsets: ["latin"],
+});
+
+const montserrat = Montserrat({
+    variable: "--font-montserrat",
     subsets: ["latin"],
 });
 
@@ -14,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={`${roboto.variable}`}>
+            <body className={`${roboto.variable} ${montserrat.variable}`}>
                 {children}
             </body>
         </html>

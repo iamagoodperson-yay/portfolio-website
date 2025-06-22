@@ -5,9 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 
-const Card = ({ title, href, imageSrc, imageWidth, imageHeight, imageAlt, bodyText }) => {
+const Card = ({ title, year, projectHref, imageSrc, imageFill, imageWidth, imageHeight, imageAlt, bodyText }) => {
     const [flipped, setFlipped] = useState(false);
     const handleFlip = () => setFlipped(f => !f);
+    const href = projectHref == undefined ? "" : projectHref;
+    // Set imageFill to true by default
+    const fill = imageFill !== undefined ? imageFill : true;
+    const imageStyle = fill ? styles.cover : styles.contain;
+
     return (
         <div
             className={`${styles.card} ${flipped ? styles.flipped : ""}`}
@@ -19,14 +24,17 @@ const Card = ({ title, href, imageSrc, imageWidth, imageHeight, imageAlt, bodyTe
                 <div className={styles.front}>
                     <div className={styles["front-img-bg"]}>
                         <Image 
-                            className={styles["front-img"]}
+                            className={`${styles["front-img"]} ${imageStyle}`}
                             src={imageSrc}
                             width={imageWidth}
                             height={imageHeight}
                             alt={imageAlt}
                         />
                     </div>
-                    <h1>{title}</h1>
+                    <div className={styles.header}>
+                        <h1>{title}</h1>
+                        <p>{year}</p>
+                    </div>
                 </div>
                 <div className={styles.back}>
                     <h1>{title}</h1>

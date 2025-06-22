@@ -21,6 +21,10 @@
     overflow: hidden;
 } 
 
+.description {
+    font-size: 1rem;
+}
+
 .right {
     display: flex;
     justify-content: center;
@@ -50,6 +54,11 @@
     column-gap: 50px;
     align-items: center;
     justify-items: center;
+}
+
+.footer {
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 1400px) {
