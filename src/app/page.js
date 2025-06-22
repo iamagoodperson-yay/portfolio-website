@@ -146,6 +146,7 @@ export default function Home() {
                     title="BuildingBloCS June Hackathon"
                     year="2025"
                     imageSrc="/competitions/buildingblocs.svg"
+                    imageFill={false}
                     imageWidth={2371}
                     imageHeight={2328}
                     imageAlt="BuildingBloCS Logo"
