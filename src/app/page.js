@@ -199,7 +199,7 @@ export default function Home() {
                 />
             </div>
 
-            <h1 className={styles["section-header"]}>Contact</h1>
+            {/* <h1 className={styles["section-header"]}>Contact</h1> */}
 
             <h2 className={styles.footer}>Made with ❤️ by Kenzie</h2>
         </div>
