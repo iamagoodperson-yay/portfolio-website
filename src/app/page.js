@@ -135,16 +135,18 @@ export default function Home() {
                 <Card
                     title="What The Hack"
                     year="2024"
+                    projectHref="https://github.com/tedydevmac/RAYdar"
                     imageSrc="/competitions/wth.svg"
                     imageFill={false}
                     imageWidth={559}
                     imageHeight={356}
                     imageAlt="What The Hack Logo"
-                    bodyText="In this hackathon, I collaborated with my team to create a chrome extension using a machine learning model to detect offensive language in order to reduce inequality. This experience taught me how to use online technologies like flask and pytorch, and how to create a minimum viable product in a short time frame."
+                    bodyText="In this hackathon, I collaborated with my team to create a chrome extension, Raydar, using a machine learning model to detect offensive language in order to reduce inequality. This experience taught me how to use online technologies like flask and pytorch, and how to create a minimum viable product in a short time frame."
                 />
                 <Card
                     title="BuildingBloCS June Hackathon"
                     year="2025"
+                    projectHref="https://github.com/tedydevmac/buildingblocs_I27"
                     imageSrc="/competitions/buildingblocs.svg"
                     imageFill={false}
                     imageWidth={2371}
@@ -161,6 +163,39 @@ export default function Home() {
                     imageHeight={262}
                     imageAlt="National Cybersecurity Olympiad Logo"
                     bodyText="Seeking to further my knowledge in cybersecurity, I participated in the National Cybersecurity Olympiad, where I tackled various cybersecurity challenges in a jeopardy-style competition. This allowed me to apply my skills in a competitive environment, and due to my efforts, I was able to achieve a Bronze award."
+                />
+            </div>
+
+            <h1 className={styles["section-header"]}>Projects</h1>
+            <div className={styles["card-container"]}>
+                <Card
+                    title="Remindo"
+                    year="2023"
+                    projectHref="https://github.com/iamagoodperson-yay/Remindo"
+                    imageSrc="/projects/remindo_logo.png"
+                    imageWidth={1440}
+                    imageHeight={262}
+                    imageAlt="Remindo Logo"
+                    bodyText="Remindo is an app aimed at helping students manage their study schedules more effectively. It allows users to create and manage study schedules, set reminders for upcoming exams, and track their progress."
+                />
+                <Card
+                    title="Pro-tech You"
+                    year="2023"
+                    imageSrc="/projects/protech_you.png"
+                    imageWidth={1440}
+                    imageHeight={262}
+                    imageAlt="Pro-tech You Logo"
+                    bodyText="Pro-tech You is a project we designed to help construction workers receive timely help after accidents or injuries on the job. By embedding pressure sensors into their helmets, we can detect when a worker has fallen and alert their supervisor and medical services, ensuring that they receive the help they need as soon as possible."
+                />
+                <Card
+                    title="Integrated Design Challenge"
+                    year="2025"
+                    projectHref="https://docs.google.com/document/d/1wE3YuIA7J7ussMmc74JgLCWTL5PUXPsH4n9aJD-Nbdc/edit?usp=sharing"
+                    imageSrc="/projects/idc.png"
+                    imageWidth={1920}
+                    imageHeight={1080}
+                    imageAlt="Integrated Design Challenge Robot"
+                    bodyText="This challenge consisted both of designing and building a robot to line trace around the field, and grab and lift objects, as well as creating machine learning model using computer vision to differentiate between and count different objects."
                 />
             </div>
 
